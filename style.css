@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background: url(./img/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.input-box{
+    width: 350px;
+    padding: 20px;
+    background-color: rgba(213, 214, 214, 0.466);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px black;
+    text-align: center;
+    backdrop-filter: blur(18px);
+    z-index: 5;
+    position: relative;
+}
+
+
+.input-box h1{
+    margin-bottom: 20px;
+    color: brown;
+}
+
+.input-box input{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.input-box button{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: brown;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.input-box button:hover{
+    opacity: .9;
+}
+
+.input-box p{
+    margin: 10px 0;
+    text-align: start;
+}
+
+
+.input-box a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.input-box a:hover{
+    color: brown;
+    text-decoration: underline;
+}
+
+.girl{
+    width: 100%;
+    height: 100%;
+    background: url(./img/girl.png);
+    background-size: 20% 40%;
+    background-position: right;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: -2;
+    animation: girl-animation 5s linear infinite;
+}
+
+.tree{
+    background: url(./img/trees.png);
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: 100% 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+
+.leaf1{
+    width: 100%;
+    height: 100%;
+    background: url(./img/leaf_01.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 3;
+    top: 60% ;
+    left: 5%;
+    animation: leaves 5s linear infinite;
+}
+.leaf2{
+    width: 100%;
+    height: 100%;
+    background: url(./img/leaf_02.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 3;
+    top: 60% ;
+    left: 15%;
+    animation: leaves 5s linear infinite;
+}
+.leaf3{
+    width: 100%;
+    height: 100%;
+    background: url(./img/leaf_03.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 3;
+    top: 60% ;
+    left:45%;
+    animation: leaves 5s linear infinite;
+}
+.leaf4{
+    width: 100%;
+    height: 100%;
+    background: url(./img/leaf_04.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 3;
+    top: 60% ;
+    left: 55%;
+    animation: leaves 5s linear infinite;
+}
+.leaf5{
+    width: 100%;
+    height: 100%;
+    background: url(./img/leaf_04.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 3;
+    top: 60% ;
+    left: 65%;
+    animation: leaves 5s linear infinite;
+}
+.leaf6{
+    width: 100%;
+    height: 100%;
+    background: url(./img/leaf_04.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 3;
+    top: 60% ;
+    left: 85%;
+    animation: leaves 5s linear infinite;
+}
+
+
+@keyframes girl-animation {
+    0%{
+        transform: translateX(20%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+    
+}
+
+
+@keyframes leaves {
+    0%{
+        top: -10%;
+        transform: translateX(0);
+    }
+    50%{
+        top: 50%;
+        transform: translateX(70px);
+    }
+    100%{
+        top:110%;
+        transform: translateX(0);
+    }
+    
+}
